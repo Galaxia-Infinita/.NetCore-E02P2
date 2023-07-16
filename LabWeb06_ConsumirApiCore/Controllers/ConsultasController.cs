@@ -69,7 +69,7 @@ namespace LabWeb06_ConsumirApiCore.Controllers
                         ViewBag.nro = CodigoMes.Count();
                     }
                 }
-                ViewBag.em = new SelectList(nmes, "NumMes", "NumMes", mes);
+                ViewBag.em = new SelectList(nmes, "numMes", "numMes", mes);
                 ViewBag.empleados = new SelectList(empleados, "CodEmp", "empleado", id);
             }
             return View(CodigoMes);
