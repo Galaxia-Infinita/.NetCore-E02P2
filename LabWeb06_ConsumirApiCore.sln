@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32428.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabWeb06_ConsumirApiCore", "LabWeb06_ConsumirApiCore\LabWeb06_ConsumirApiCore.csproj", "{D3953DA5-6818-4BA8-981D-F3D7D4B168F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3953DA5-6818-4BA8-981D-F3D7D4B168F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3953DA5-6818-4BA8-981D-F3D7D4B168F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3953DA5-6818-4BA8-981D-F3D7D4B168F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3953DA5-6818-4BA8-981D-F3D7D4B168F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23CA55C1-9D3A-4FCE-B9CE-091FB22AC7EE}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<LabWeb06_ConsumirApiCore.Entidad.PedidosCodigoyMes>
+@{
+    ViewData["Title"] = "CodigoyMes";
+}
+
+<h1>Consumiendo el Servicio Web API</h1>
+<hr />
+<form action="/Consultas/CodigoyMes">
+    <p>Seleccione un Empleado</p>
+    <p>
+        <select name="id" asp-items="ViewBag.empleados">
+            <option>Seleccionar</option>
+        </select>
+        <select name="mes" asp-items="ViewBag.em">
+            <option>Seleccionar</option>
+        </select>
+        <input type="submit" value="Enviar" />
+    </p>
+    
+</form>
+<hr />
+<p>Número de Pedidos encontrados: @ViewBag.nro</p>
+<hr />
+<table class="table table-bordered">
+    <tr>
+        <td>Item</td>
+        <td>Pedido</td>
+        <td>Fecha Orden</td>
+        <td>Año de Venta</td>
+        <td>Cod.Emp</td>
+        <td>Apellidos</td>
+        <td>Ciudad de Envio</td>
+    </tr>
+    @{ int n = 0;}
+    @foreach (var item in Model)
+    {
+        n++;
+        <tr>
+            <td>@n</td>
+            <td>@item.IdPedidos</td>
+            <td>@item.fechaOrden</td>
+            <td>@item.Anio</td>
+            <td>@item.CodEmp</td>
+            <td>@item.Apellidos</td>
+            <td>@item.CiudadEnvio</td>
+        </tr>
+    }
+</table>
